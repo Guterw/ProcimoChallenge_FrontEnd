@@ -58,14 +58,29 @@
 
   .selected-country-info {
     position: absolute;
-    top: 20px; /* Ajuste conforme necessário */
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(255, 255, 255, 0.8); /* Cor de fundo com transparência */
+    top: 11%;
+    left: 0;
+    margin-left: 10px;
+    width: 80vw; /* Ajuste conforme necessário */
+    max-width: 400px; /* Limite a largura máxima */
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 10px;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 1000;
 }
-  
-  
+
+.selected-network-info {
+    position: absolute;
+    top: 22%;
+    margin-left: 10px;
+    left: 0;
+    width: 80vw; /* Ajuste conforme necessário */
+    max-width: 400px; /* Limite a largura máxima */
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
