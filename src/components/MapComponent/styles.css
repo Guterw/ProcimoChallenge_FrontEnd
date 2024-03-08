@@ -1,22 +1,71 @@
-.map-container{
+.map-container {
+    position: relative;
     height: 100vh;
     width: 100vw;
-}
-
-.back-button {
+  }
+  
+  .country-dropdown {
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 10px;
+    right: 10px;
+    z-index: 1000; /* Garante que o botão fique acima do mapa */
+  }
+  
+  .country-dropdown button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
     padding: 10px 20px;
-    background-color: #fff;
-    border: 2px solid #333;
     border-radius: 5px;
-    font-size: 16px;
     cursor: pointer;
+  }
+  
+  .country-dropdown .country-list {
+    position: absolute;
+    top: calc(100% + 5px);
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  .country-dropdown .country-list input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .country-dropdown .country-list button {
+    background-color: transparent;
+    color: #333;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    text-align: left;
+  }
+  
+  .country-dropdown .country-list button:hover {
+    background-color: #f0f0f0;
+  }
+
+  .selected-country-info {
+    position: absolute;
+    top: 20px; /* Ajuste conforme necessário */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.8); /* Cor de fundo com transparência */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
     z-index: 1000;
 }
-
-.back-button:hover {
-    background-color: #333;
-    color: #fff;
-}
+  
+  
