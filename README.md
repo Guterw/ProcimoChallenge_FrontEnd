@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# Procimo Challenge Frontend
+==========================
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+### --------
 
-## Available Scripts
+This project is part of the Procimo Tryout (frontend) challenge, where you will be building a web app using ReactJS to visualize geolocated data retrieved from the CityBikes API.
 
-In the project directory, you can run:
+### Requirements
 
-### `npm start`
+-   Build a Web App using ReactJS.
+-   Fetch data from [CityBikes API](https://api.citybik.es/v2/), an API for Bike Sharing Data.
+-   Show data on a map with 3 different layers:
+    -   L1: Number of networks per country.
+    -   L2: Number of stations per network.
+    -   L3: Station details.
+-   Allow the user to drill down from L1 to L3 by clicking on markers.
+-   Allow the user to go back to the previous layer.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Project Components
+### ------------------
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### This project contains the following components:
 
-### `npm test`
+-   Map
+-   Networks
+-   Stations
+-   LocationMarker
+-   CustomButton
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How to Run in Development
+### -------------------------
 
-### `npm run build`
+### To run the project in development mode, follow these steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1.  Clone the repository: `git clone https://github.com/your-repo.git`
+2.  Navigate to the project directory: `cd your-project-directory`
+3.  Install dependencies: `npm install`
+4.  Start the development server: `npm start`
+5.  Open your browser and navigate to `http://localhost:3000`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## How to Build for Production
+### ---------------------------
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### To build the project for production, follow these steps:
 
-### `npm run eject`
+1.  Ensure you have already installed dependencies using `npm install`.
+2.  Run the build command: `npm run build`
+3.  Your optimized production build will be available in the `build` directory.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## How to Test
+### -----------
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Testing is an essential part of the development process. To run tests for this project, execute the following command:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+`npm test`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Dependencies
+### ------------
 
-## Learn More
+### This project relies on the following dependencies:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+-   ReactJS
+-   Leaflet
+-   react-leaflet
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Challenge Details
+### -----------------
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For detailed information about the challenge requirements, please refer to the "ProcimoChallenge_Frontend.pdf" document located in the root directory of this project

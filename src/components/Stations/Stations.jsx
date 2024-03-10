@@ -14,17 +14,20 @@ export default function Stations({ data, index }) {
     });
     
     return (
+        <div>
         <Marker
             icon={customIcon}
             key={index}
             position={[data.latitude, data.longitude]}
         >
             <Tooltip sticky>
-                <div>
-                    <h2>{data.name}</h2>
-                    <p>{data.free_bikes} bicicletas disponíveis</p>
+                <div style={{ marginRight: '25px', padding: '0 6px', width: '100%' }}>
+                    <h2 style={{ alignItems: 'center', textAlign: 'center', width: '100%' }}>{data.name}</h2>
+                    <p>{data.free_bikes} Available bikes</p>
+                    <p>{data.empty_slots} Empty spaces</p>
                 </div>
             </Tooltip>
         </Marker>
+        </div>
     )
 }

@@ -6,6 +6,8 @@ import './Map.css';
 import LocationMarker from '../LocationMarker/LocationMarker';
 import Networks from '../Networks/Networks';
 import Stations from '../Stations/Stations';
+import CustomButton from '../CustomButton/CustomButton';
+import CloseImage from '../../assets/Close.svg'
 
 
 export default function Map() {
@@ -16,32 +18,29 @@ export default function Map() {
     const [networkMarkersVisible, setNetworkMarkersVisible] = useState(true);
     const [selectedNetworkId, setSelectedNetworkId] = useState(null);
     const [stations, setStations] = useState([]);
-    const position = [51.505, -0.09]; // Posição padrão do mapa
+    const position = [47, 10];
 
     useEffect(() => {
         axios
             .get("http://api.citybik.es/v2/networks")
             .then((response) => {
-                setData(response.data.networks); // Armazenar os dados na state 'data'
+                setData(response.data.networks);
             })
             .catch((error) => {
                 console.log(error);
             });
     }, []);
 
-    // Função para lidar com a seleção de país
     const handleCountrySelect = (country) => {
         setSelectedCountry(country);
-        setShowCountries(false); // Fechar a lista de países ao selecionar um país
-        setSearchTerm(''); // Limpar o termo de pesquisa ao selecionar um país
+        setShowCountries(false);
+        setSearchTerm('');
         setNetworkMarkersVisible(true);
         setStations([]);
     };
 
-    // Extrair a lista de países disponíveis dos dados
     const availableCountries = [...new Set(data.map(network => network.location.country))];
 
-    // Filtrar países com base no termo de pesquisa
     const filteredCountries = availableCountries.filter(country =>
         country.toLowerCase().includes(searchTerm.toLowerCase())
     );
@@ -60,10 +59,33 @@ export default function Map() {
             .then(response => {
                 setStations(response.data.network.stations);
                 toggleNetworkMarkersVisibility();
+                if (!selectedCountry) {
+                    setSelectedCountry(response.data.network.location.country);
+                }
             })
             .catch(error => {
                 console.error('Error fetching stations:', error);
             });
+    };
+
+    const resetMapLayers = () => {
+        setSelectedCountry(null);
+        setSelectedNetworkId(null);
+        setStations([]);
+        setNetworkMarkersVisible(true);
+    };
+
+    const removeStationsLayer = () => {
+        setStations([]);
+        setNetworkMarkersVisible(true);
+
+    };
+
+    const removeNetworksLayer = () => {
+        setSelectedCountry(null);
+        setSelectedNetworkId(null);
+        setStations([]);
+        setNetworkMarkersVisible(true);
     };
 
     const selectedNetwork = data.find(network => network.id === selectedNetworkId);
@@ -72,16 +94,24 @@ export default function Map() {
         <>
             {selectedCountry && (
                 <div className="selected-country-info">
-                    <p>{selectedCountry} - Networks: {getNetworkCount(selectedCountry)}</p>
+                    <p>{selectedCountry} - Country Networks: {getNetworkCount(selectedCountry)}</p>
+                    <CustomButton 
+                        onClick={removeNetworksLayer}
+                        image={CloseImage}
+                        style={{ width: '30px', height: '30px', marginRight: '5px' }}
+                        tooltip="Close layer"
+                    />
                 </div>
             )}
             <div className="country-dropdown">
-                <button onClick={() => setShowCountries(!showCountries)}>Selecione um país</button>
+                <button onClick={() => setShowCountries(!showCountries)}>
+                    {selectedCountry ? selectedCountry : "Choose a country"}
+                </button>
                 {showCountries && (
                     <div className="country-list">
                         <input
                             type="text"
-                            placeholder="Pesquisar país"
+                            placeholder="Search a country"
                             value={searchTerm}
                             onChange={(e) => setSearchTerm(e.target.value)}
                         />
@@ -98,7 +128,7 @@ export default function Map() {
             </div>
             <MapContainer
                 center={position}
-                zoom={11}
+                zoom={5}
                 scrollWheelZoom={true}
                 className='map-container'
             >
@@ -142,12 +172,21 @@ export default function Map() {
             </MapContainer>
             {selectedNetworkId && selectedNetwork && (
                 <div>{stations.length > 0 && (
-                <div className="selected-network-info">
-                    
-                    <p>{selectedNetwork.name} Network Stations: {stations.length}</p>
-                </div>)}
+                    <div className="selected-network-info">
+                        <p>{selectedNetwork.name} Network Stations: {stations.length}</p>
+                        <CustomButton 
+                            onClick={removeStationsLayer}
+                            image={CloseImage}
+                            style={{ width: '30px', height: '30px', marginRight: '5px' }}
+                            tooltip="Close layer"
+                        />
+                    </div>
+                )}
                 </div>
             )}
+            <div>
+                <button onClick={resetMapLayers}>Resetar Mapa</button>
+            </div>
         </>
     );
 }

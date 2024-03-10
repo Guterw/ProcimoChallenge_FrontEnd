@@ -1,20 +1,20 @@
 import React from "react";
 import { Marker, Tooltip } from 'react-leaflet';
-import NetworkSvg from '../../assets/Network.svg';
+import NetworkPng from '../../assets/pin.png';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 
 export default function Networks({ data, index, onClick }) {
     
     const customIcon = L.icon({
-        iconUrl: NetworkSvg,
-        iconSize: [32, 32],
+        iconUrl: NetworkPng,
+        iconSize: [40, 40],
         iconAnchor: [16, 32],
         popupAnchor: [0, -32]
     });
 
     const handleClick = () => {
-        onClick(data.id); // Passa o ID da rede para a função de manipulador
+        onClick(data.id);
     };
     
     return (
@@ -22,11 +22,12 @@ export default function Networks({ data, index, onClick }) {
             icon={customIcon}
             key={index}
             position={[data.location.latitude, data.location.longitude]}
-            eventHandlers={{ click: handleClick }} // Define o evento de clique
+            eventHandlers={{ click: handleClick }}
+            data-testid="marker"
         >
             <Tooltip sticky>
-                <div>
-                    <h2>{data.name}</h2>
+                <div style={{ alignItems: 'center', textAlign: 'center', width: '100%', padding: '2px' }}>
+                    <h2 style={{ padding: '0 25px'}}>{data.name}</h2>
                     <p>{data.location.city}</p>
                 </div>
             </Tooltip>

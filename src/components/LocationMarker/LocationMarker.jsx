@@ -1,11 +1,11 @@
 import React, { useState } from "react"
 import { useMapEvents, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
-import LocationSvg from '../../assets/Location.svg'
+import LocationPng from '../../assets/Location.png'
 
 export default function LocationMarker() {
     const customIcon = L.icon({
-        iconUrl: LocationSvg,
+        iconUrl: LocationPng,
         iconSize: [32, 32],
         iconAnchor: [16, 32],
         popupAnchor: [0, -32]
