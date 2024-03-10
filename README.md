@@ -32,7 +32,15 @@ Following this design prototype ensured consistency and alignment between the vi
 
 This design prototype served as a guide throughout the development process, ensuring that the final product meets the expectations set by the initial design concept.
 
-### ---------------------------------------------------
+## Coding:
+## Dependencies
+
+### This project relies on the following dependencies:
+
+-   ReactJS
+-   Leaflet
+-   react-leaflet
+
 ### This project contains the following components:
 
 - Map: The Map component is responsible for rendering the main map interface where all the geolocated data is visualized. It manages the display of different layers (Networks, Stations, etc.) and handles user interactions such as zooming and panning.
@@ -70,14 +78,6 @@ All these components are rendered within the Map component, which serves as the 
 Testing is an essential part of the development process. To run tests for this project, execute the following command:
 
 `npm test`
-
-## Dependencies
-
-### This project relies on the following dependencies:
-
--   ReactJS
--   Leaflet
--   react-leaflet
 
 ## Challenge Details
 
