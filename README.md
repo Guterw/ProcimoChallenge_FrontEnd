@@ -21,13 +21,12 @@ This project is part of the Procimo Tryout (frontend) challenge, where you will 
 
 In summary, this project was completed within a timeframe of 4 days, employing the Kanban organizational method with Trello for sprint management. Using Kanban allowed for a clear visualization of tasks, workflows, and progress throughout the development process. The Trello board was utilized to plan, organize, and track tasks, ensuring efficient project management and timely delivery. This approach facilitated collaboration and prioritization, enabling the project to progress smoothly from conception to completion within the specified timeframe.
 
-[https://trello.com/invite/b/CjfOe5el/ATTI6a1e24f6ce6b8509707c43f56d35d37b14EECC28/luccas-project-challenge](https://trello.com/invite/b/CjfOe5el/ATTI6a1e24f6ce6b8509707c43f56d35d37b14EECC28/luccas-project-challenge)
-<a href="https://trello.com/invite/b/CjfOe5el/ATTI6a1e24f6ce6b8509707c43f56d35d37b14EECC28/luccas-project-challenge" target="_blank">Clique aqui para ver o design prototype</a>
+<a href="https://trello.com/invite/b/CjfOe5el/ATTI6a1e24f6ce6b8509707c43f56d35d37b14EECC28/luccas-project-challenge" target="_blank">Click here for see the Trello Kanban Project of this project</a>
 
 ### ---------------------------------------------------
 ### Design
 
-It's worth mentioning that a design prototype was created for this project, which served as a blueprint for the code implementation. You can view the design prototype in: [https://www.figma.com/file/MEkhSQX0MSDIeMw6Iq41ih/Procimo_Challenge?type=design&node-id=0%3A1&mode=dev&t=qFhwZPMNzFyFHFtJ-1](https://www.figma.com/file/MEkhSQX0MSDIeMw6Iq41ih/Procimo_Challenge?type=design&node-id=0%3A1&mode=dev&t=qFhwZPMNzFyFHFtJ-1){:target="_blank"} to get a visual representation of how the final product was intended to look and function.
+It's worth mentioning that a design prototype was created for this project, which served as a blueprint for the code implementation. You can view the design prototype in: <a href="https://www.figma.com/file/MEkhSQX0MSDIeMw6Iq41ih/Procimo_Challenge?type=design&node-id=0%3A1&mode=dev&t=qFhwZPMNzFyFHFtJ-1" target="_blank">Click here for see the Design Prototype of this project</a> to get a visual representation of how the final product was intended to look and function.
 
 Following this design prototype ensured consistency and alignment between the visual representation and the implemented code. It helped in maintaining a cohesive user interface design, adhering to best practices in usability and user experience.
 
