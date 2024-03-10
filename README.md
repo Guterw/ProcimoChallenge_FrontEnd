@@ -33,9 +33,10 @@ Following this design prototype ensured consistency and alignment between the vi
 This design prototype served as a guide throughout the development process, ensuring that the final product meets the expectations set by the initial design concept.
 
 ## Coding:
-## Dependencies
 
-### This project relies on the following dependencies:
+### Dependencies
+
+This project relies on the following dependencies:
 
 -   ReactJS
 -   Leaflet
