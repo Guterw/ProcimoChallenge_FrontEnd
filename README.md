@@ -1,4 +1,4 @@
-# Procimo Challenge Frontend
+# Luccas Procimo Challenge Frontend
 
 ## Overview
 
@@ -15,8 +15,26 @@ This project is part of the Procimo Tryout (frontend) challenge, where you will 
 -   Allow the user to drill down from L1 to L3 by clicking on markers.
 -   Allow the user to go back to the previous layer.
 
-## Project Components
+## Project Development:
 
+### Planning Project with sprints in Trello:
+
+In summary, this project was completed within a timeframe of 4 days, employing the Kanban organizational method with Trello for sprint management. Using Kanban allowed for a clear visualization of tasks, workflows, and progress throughout the development process. The Trello board was utilized to plan, organize, and track tasks, ensuring efficient project management and timely delivery. This approach facilitated collaboration and prioritization, enabling the project to progress smoothly from conception to completion within the specified timeframe.
+
+[https://trello.com/invite/b/CjfOe5el/ATTI6a1e24f6ce6b8509707c43f56d35d37b14EECC28/luccas-project-challenge](https://trello.com/invite/b/CjfOe5el/ATTI6a1e24f6ce6b8509707c43f56d35d37b14EECC28/luccas-project-challenge)
+
+### ---------------------------------------------------
+### Design
+
+It's worth mentioning that a design prototype was created for this project, which served as a blueprint for the code implementation. You can view the design prototype in: [https://www.figma.com/file/MEkhSQX0MSDIeMw6Iq41ih/Procimo_Challenge?type=design&node-id=0%3A1&mode=dev&t=qFhwZPMNzFyFHFtJ-1](https://www.figma.com/file/MEkhSQX0MSDIeMw6Iq41ih/Procimo_Challenge?type=design&node-id=0%3A1&mode=dev&t=qFhwZPMNzFyFHFtJ-1) to get a visual representation of how the final product was intended to look and function.
+
+Following this design prototype ensured consistency and alignment between the visual representation and the implemented code. It helped in maintaining a cohesive user interface design, adhering to best practices in usability and user experience.
+
+This design prototype served as a guide throughout the development process, ensuring that the final product meets the expectations set by the initial design concept.
+
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FMEkhSQX0MSDIeMw6Iq41ih%2FProcimo_Challenge%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DqFhwZPMNzFyFHFtJ-1" allowfullscreen></iframe>
+
+### ---------------------------------------------------
 ### This project contains the following components:
 
 - Map: The Map component is responsible for rendering the main map interface where all the geolocated data is visualized. It manages the display of different layers (Networks, Stations, etc.) and handles user interactions such as zooming and panning.

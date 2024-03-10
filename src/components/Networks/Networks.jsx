@@ -1,6 +1,6 @@
 import React from "react";
 import { Marker, Tooltip } from 'react-leaflet';
-import NetworkPng from '../../assets/pin.png';
+import NetworkPng from '../../assets/Network.png';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 
