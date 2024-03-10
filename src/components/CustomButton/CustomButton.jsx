@@ -17,7 +17,6 @@ export default function CustomButton({ onClick, children, image, alt, style, too
                 display: 'flex',
                 cursor: 'pointer',
                 borderRadius: '100px',
-                display: 'inline-flex',
                 alignItems: 'center',
                 position: 'relative',
                 textAlign: 'center',
