@@ -21,7 +21,8 @@ This project is part of the Procimo Tryout (frontend) challenge, where you will 
 
 In summary, this project was completed within a timeframe of 4 days, employing the Kanban organizational method with Trello for sprint management. Using Kanban allowed for a clear visualization of tasks, workflows, and progress throughout the development process. The Trello board was utilized to plan, organize, and track tasks, ensuring efficient project management and timely delivery. This approach facilitated collaboration and prioritization, enabling the project to progress smoothly from conception to completion within the specified timeframe.
 
-[https://trello.com/invite/b/CjfOe5el/ATTI6a1e24f6ce6b8509707c43f56d35d37b14EECC28/luccas-project-challenge](https://trello.com/invite/b/CjfOe5el/ATTI6a1e24f6ce6b8509707c43f56d35d37b14EECC28/luccas-project-challenge){:target="_blank"}
+[https://trello.com/invite/b/CjfOe5el/ATTI6a1e24f6ce6b8509707c43f56d35d37b14EECC28/luccas-project-challenge](https://trello.com/invite/b/CjfOe5el/ATTI6a1e24f6ce6b8509707c43f56d35d37b14EECC28/luccas-project-challenge)
+<a href="https://trello.com/invite/b/CjfOe5el/ATTI6a1e24f6ce6b8509707c43f56d35d37b14EECC28/luccas-project-challenge" target="_blank">Clique aqui para ver o design prototype</a>
 
 ### ---------------------------------------------------
 ### Design
